@@ -25,6 +25,7 @@ namespace BMICalculator
         {
             BMITextBox.Visible = false;
             BMIScaleTextBox.Visible = false;
+            BMIProgressBar.Visible = false;
         }
         
 
@@ -53,11 +54,15 @@ namespace BMICalculator
             BMIScaleTextBox.Visible = true;
             BMITextBox.Visible = true;
             BMITextBox.Text = ""+ BMI;
+            BMIProgressBar.Visible = true;
+            BMIProgressBar.Increment(-100);
+            BMIProgressBar.Value = Convert.ToInt32(BMI);
         }
 
         private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
+        
     }
 }

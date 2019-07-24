@@ -38,6 +38,7 @@
             this.BMITextBox = new System.Windows.Forms.TextBox();
             this.ImperialRadioButton = new System.Windows.Forms.RadioButton();
             this.BMIScaleTextBox = new System.Windows.Forms.TextBox();
+            this.BMIProgressBar = new System.Windows.Forms.ProgressBar();
             this.BMITableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,7 +111,7 @@
             // calculateBMIButton
             // 
             this.calculateBMIButton.Font = new System.Drawing.Font("Gulim", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.calculateBMIButton.Location = new System.Drawing.Point(75, 180);
+            this.calculateBMIButton.Location = new System.Drawing.Point(158, 192);
             this.calculateBMIButton.Name = "calculateBMIButton";
             this.calculateBMIButton.Size = new System.Drawing.Size(132, 46);
             this.calculateBMIButton.TabIndex = 6;
@@ -120,10 +121,10 @@
             // 
             // BMITextBox
             // 
-            this.BMITextBox.Location = new System.Drawing.Point(75, 232);
+            this.BMITextBox.Location = new System.Drawing.Point(12, 192);
             this.BMITextBox.Name = "BMITextBox";
             this.BMITextBox.ReadOnly = true;
-            this.BMITextBox.Size = new System.Drawing.Size(132, 46);
+            this.BMITextBox.Size = new System.Drawing.Size(140, 46);
             this.BMITextBox.TabIndex = 7;
             this.BMITextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -151,11 +152,25 @@
             this.BMIScaleTextBox.Text = "Underweight: less than 18.5\r\n\r\nNormal: between 18.5 and 24.9\r\n\r\nOverweight: betwe" +
     "en 25 and 29.9\r\n\r\nObese: 30 or greater";
             // 
+            // BMIProgressBar
+            // 
+            this.BMIProgressBar.ForeColor = System.Drawing.Color.GreenYellow;
+            this.BMIProgressBar.Location = new System.Drawing.Point(12, 244);
+            this.BMIProgressBar.Maximum = 50;
+            this.BMIProgressBar.Minimum = 15;
+            this.BMIProgressBar.Name = "BMIProgressBar";
+            this.BMIProgressBar.Size = new System.Drawing.Size(278, 24);
+            this.BMIProgressBar.Step = 1;
+            this.BMIProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.BMIProgressBar.TabIndex = 10;
+            this.BMIProgressBar.Value = 15;
+            // 
             // BMICalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(302, 433);
+            this.Controls.Add(this.BMIProgressBar);
             this.Controls.Add(this.BMIScaleTextBox);
             this.Controls.Add(this.ImperialRadioButton);
             this.Controls.Add(this.BMITextBox);
@@ -190,6 +205,7 @@
         private System.Windows.Forms.TextBox BMITextBox;
         private System.Windows.Forms.RadioButton ImperialRadioButton;
         private System.Windows.Forms.TextBox BMIScaleTextBox;
+        private System.Windows.Forms.ProgressBar BMIProgressBar;
     }
 }
 
