@@ -12,8 +12,6 @@ namespace BMICalculator
 {
     public partial class BMICalculator : Form
     {
-        private int height;
-        private int weight;
         public double Height { get; set; }
         public double Weight { get; set; }
         public double BMI { get; set; }
@@ -27,7 +25,6 @@ namespace BMICalculator
         {
             BMITextBox.Visible = false;
             BMIScaleTextBox.Visible = false;
-            NumericKeyboardPanel.Visible = false;
         }
         
 
@@ -56,6 +53,11 @@ namespace BMICalculator
             BMIScaleTextBox.Visible = true;
             BMITextBox.Visible = true;
             BMITextBox.Text = ""+ BMI;
+        }
+
+        private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
