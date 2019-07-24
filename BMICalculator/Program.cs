@@ -12,6 +12,8 @@ using System.Windows.Forms;
  * 19-07-23 Yeseul Kang Built basic code and UI
  * 19-07-24 Yeseul Kang Built calculating code
  * 19-07-24 Yeseul Kang Added splash page and edited some code
+ * 19-07-24 Yeseul Kang Added progress bar and edited some code
+ * 
  */
 namespace BMICalculator
 {
