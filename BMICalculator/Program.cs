@@ -9,7 +9,7 @@ using System.Windows.Forms;
  * Last modified date: 19-07-23
  * Description: It is BMI calculator
  * Revision history:
- * 19-07-23 Yeseul Kang Built basic code
+ * 19-07-23 Yeseul Kang Built basic code and UI
  */
 namespace BMICalculator
 {
